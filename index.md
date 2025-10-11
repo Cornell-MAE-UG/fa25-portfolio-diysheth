@@ -6,7 +6,7 @@ title: Diya Sheth
 ## About Me
 
 
-![Profile Picture]({{ "assets/images/headshot.jpg" | relative_url }}){: class="profile-image"}
+![Profile Picture]({{ "./assets/images/headshot.jpg" | relative_url }}){: class="profile-image"}
 
  
 My name is Diya Sheth and I am a sophomore studying Mechanical Engineering at Cornell University. I am very interested in bridging the gap between medicine and technology through medical devices. 
