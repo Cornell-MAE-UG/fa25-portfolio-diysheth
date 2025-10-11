@@ -5,7 +5,7 @@ permalink: /cv/
 ---
 ## Curriculum Vitae
 
-[Download my CV]({{ "'/Users/diya/Downloads/Diya Sheth Resume 2025 (2).pdf'" | relative_url }}) in PDF format.
+[Download my CV]({{ "assets/CV.pdf" | relative_url }}) in PDF format.
 
 
 **Email:** [ds2457@cornell.edu](mailto:ds2457@cornell.edu) | | | **Phone:** +123 456 7890
