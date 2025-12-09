@@ -21,3 +21,4 @@ Given a 2D design space of 150cm long and 50cm tall, a bar of a fixed length (yo
 
 ## Degrees of Freedom
 The mechanism has one degree of freedom.
+
