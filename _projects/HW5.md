@@ -6,99 +6,48 @@ technologies: [Autodesk Fusion]
 image: assets/images/IMG_0023.jpg
 ---
 
-# Problem
 
-Given a 2D design space of **150 cm long** and **50 cm tall**, a rigid bar of a fixed length (your choice), **3 pin supports** (two mounted on the ground), and a **linear actuator** chosen from the provided catalog (max force only), the task is to design a mechanism that can **lift the maximum possible weight** to the **maximum possible height**.  
-All bars, supports, and the actuator are assumed rigid for this first part of the analysis.
-
-The mechanism I designed is shown in the sketch above.
+# Problem Definition
+The goal is to design a 2D linkage that fits inside a **150 cm × 50 cm** window and can lift the **maximum load** to the **maximum height** using one fixed-length bar, three pin supports (two on the ground), and a linear actuator. All parts are rigid, and the analysis is static.
 
 ---
 
-# Constraints / Objectives
-
-### **Geometric Constraints**
-- Entire mechanism must fit inside a **150 cm × 50 cm** rectangular design window.
-- Two pin supports must be placed on the ground plane (in my design, points **A** and **B**, 300 mm apart).
-- Bar lengths in my design:  
-  - Main lifting bar: **450 mm**  
-  - Secondary strut: **200 mm**  
-  - Actuator link: **150 mm**
-
-### **Actuator Constraints**
-- Must use a model from the provided actuator catalog (max force rating only).
-- Must not cause interference during motion.
-- Must generate enough moment about ground support **A** to lift the load.
-
-### **Design Objectives**
-1. **Lift the greatest possible weight** the actuator can statically support.  
-2. **Achieve the largest possible vertical lift height** for the end point of the main bar.
+# Constraints & Objectives
+- Mechanism must stay inside **1500 mm × 500 mm**
+- Ground pins **A** and **B** are **300 mm** apart
+- Chosen bar lengths:
+  - Main bar: **450 mm**
+  - Strut: **200 mm**
+- Actuator force limited to catalog **max force**
+- **Objective:** maximize lifting force and vertical travel
 
 ---
 
-# Design Degrees of Freedom
+# Degrees of Freedom
+The mechanism has 4 links (ground, main bar, strut, actuator) and 5 pin joints.  
+Gruebler’s equation gives:
 
-This is a **1-DOF pin-jointed mechanism** driven by a linear actuator.
+$$
+DOF = 3(4-1) - 2(5) = -1
+$$
 
-- Points **A** and **B** are fixed ground supports.
-- Joint **C** connects the actuator to the main lifting bar.
-- The actuator extension determines the rotation of the 450 mm bar about point **A**.
-- The location of joints A, B, C, and bar lengths determine the full motion path of the lifted point **K**.
+The variable-length actuator adds one DOF → system behaves as a **1-DOF mechanism**.
 
 ---
 
-# Static Analysis (Rigid-Bar Approximation)
-
-To determine the load the mechanism can lift, I treated all bars as rigid and analyzed the **moment balance about point A**.
-
-The actuator applies a force $F_{\text{act}}$ at joint **C**, creating a moment:
+# Static Analysis Summary
+For each actuator length, link geometry is solved to find the bar angles.  
+Taking moments about the ground pin gives:
 
 $$
-M_{\text{act}} = F_{\text{act}} \, r_{AC} \sin(\theta_{AC})
+W \cdot d_{\text{load}} = F_a \cdot d_{\text{act}}
 $$
 
-The load at point **K** produces an opposing moment:
+Thus,
 
 $$
-M_{\text{load}} = W \, r_{AK} \sin(\theta_{AK})
+W = F_a \left(\frac{d_{\text{act}}}{d_{\text{load}}}\right)
 $$
 
-Static equilibrium requires:
-
-$$
-F_{\text{act}} \, r_{AC} \sin(\theta_{AC})=W \, r_{AK} \sin(\theta_{AK})
-$$
-
-Where:
-
-- $r_{AC} = 200\ \text{mm}$  
-- $r_{AK} = 450\ \text{mm}$  
-- $\theta_{AC}$ and $\theta_{AK}$ depend on the actuator and bar orientation.
-
-Solving for the liftable weight:
-
-$$
-W = F_{\text{act}}
-\left( \frac{r_{AC}}{r_{AK}} \right)
-\left( \frac{\sin(\theta_{AC})}{\sin(\theta_{AK})} \right)
-$$
-
-This expression shows that the lift capacity depends heavily on the geometry and the angles.  
-The mechanism lifts the most weight when the bar is steep (large $\sin\theta$) and the least when horizontal.
-
-In my design, actuator contraction raises point **C**, rotating the 450 mm main bar upward and lifting point **K** through the dashed arc (≈ 200 mm height), while staying within the 50 cm height limit.
-
----
-
-# Final Mechanism (Rigid-Bar Model)
-
-The final design includes:
-
-- Ground supports at **A** and **B** (300 mm apart)  
-- Main lifting bar: **450 mm**  
-- Secondary bar: **200 mm**  
-- Actuator bar: **150 mm**  
-- Joint **C** as actuator attachment point  
-- Load carried at point **K** near the tip of the 450 mm bar  
-
-The actuator retracts to raise the bar and extend to lower it, creating a simple, controllable 1-DOF lifting mechanism.
+This shows the mechanism lifts the most weight when the actuator has a large moment arm and the load moment arm is small. The chosen link lengths and support locations were selected to maximize this mechanical advantage while staying inside the design window.
+```
