@@ -2,7 +2,7 @@
 layout: project
 title: Piston Problem - ENGRD 2020
 description: mechanical design problem
-technologies: [Autodesk Fusion]
+technologies: []
 image: assets/images/IMG_0023.jpg
 ---
 
