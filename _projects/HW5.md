@@ -32,13 +32,12 @@ By checking how effectively the actuator pushed on the bar at different angles, 
 ## (a) Maximum deflection and assumptions  
 For this step I treated the 450 mm lifting bar as a beam instead of rigid.  
 Assumptions:
-- Pin A is the fixed support, so the bar behaves like a cantilever.
-- The actuator force acts at C, 200 mm from A.
+- Pin A is the fixed support
 - The payload hangs at the tip of the bar.
 - Only the components of these forces perpendicular to the bar create bending.
 - The bar has a uniform 20 × 30 mm hollow rectangular cross-section in aluminum 6061-T6.
 
-Using standard cantilever beam formulas with a point load at C and another at the tip, I estimated the worst case tip deflection in the middle position. The total vertical deflection at the tip comes out to only a few millimeters, comfortably below the 9 mm (2% of 450 mm) limit.
+I estimated the worst case tip deflection in the middle position. The total vertical deflection at the tip comes out to only a few millimeters, comfortably below the 9 mm (2% of 450 mm) limit.
 
 ## (b) Beam design for < 2% deflection  
 To keep deflection under 2% while minimizing mass, I chose an aluminum tube since it has a good stiffness to weight ratio.
