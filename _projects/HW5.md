@@ -66,9 +66,7 @@ $$
 Static equilibrium requires:
 
 $$
-F_{\text{act}} \, r_{AC} \sin(\theta_{AC})
-=
-W \, r_{AK} \sin(\theta_{AK})
+F_{\text{act}} \, r_{AC} \sin(\theta_{AC})=W \, r_{AK} \sin(\theta_{AK})
 $$
 
 Where:
