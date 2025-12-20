@@ -1,9 +1,7 @@
 ---
 layout: project
 title: Extra Credit - ENGRD 2020
-description: Analyzing a device
-technologies: []
-image: 
+description: Analyzing Duffield Hall
 ---
 
 # Heating Load Analysis of Duffield Hall (Cornell University)
@@ -43,12 +41,12 @@ No shaft work is produced by the building, so work interactions are neglected.
   <img src="https://miro.medium.com/v2/resize%3Afit%3A1364/1%2AxyHQojQnRo6xCyu6cunSNA.jpeg"
        alt="Pressure–Volume (P–V) Diagram"
        width="500">
-</p>
 
 <img width="500" alt="Screenshot 2025-12-20 at 3 49 24 PM" src="https://github.com/user-attachments/assets/63c8085a-09bf-449b-ba84-4fb26c875961" />
 
 <img width="500" alt="Screenshot 2025-12-20 at 3 50 05 PM" src="https://github.com/user-attachments/assets/7ca522a8-e0d7-4db0-8b9d-ce5e172a5c75" />
 
+</p>
 
 ### Mass Balance
 
