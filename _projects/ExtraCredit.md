@@ -2,7 +2,7 @@
 layout: project
 title: Extra Credit - ENGRD 2210
 description: Analyzing Duffield Hall
- 
+image: https://www.vermontstructuralslate.com/wp-content/uploads/2018/04/DSC_0018-1-1354x900.jpg
 ---
 
 # Heating Analysis of Duffield Hall (Cornell University)
