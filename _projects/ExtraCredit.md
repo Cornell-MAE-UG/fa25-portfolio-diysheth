@@ -46,7 +46,6 @@ No shaft work is produced by the building, so work interactions are neglected.
          object-fit: cover;
          object-position: left;
        ">
-</p>
 
 <img width="500" alt="Screenshot 2025-12-20 at 3 49 24 PM" src="https://github.com/user-attachments/assets/63c8085a-09bf-449b-ba84-4fb26c875961" />
 
