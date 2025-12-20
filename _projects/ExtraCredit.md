@@ -1,10 +1,10 @@
-
+---
 layout: project
 title: Extra Credit - ENGRD 2020
 description: Analyzing a device
 technologies: []
 image: 
-
+---
 
 # Heating Load Analysis of Duffield Hall (Cornell University)
 
@@ -17,10 +17,11 @@ image:
 <p align="center">
   <img src="https://www.vermontstructuralslate.com/wp-content/uploads/2018/04/DSC_0018-1-1354x900.jpg"
        alt="Duffield Hall"
-       width="400">
+       width="500">
 </p>
 
 Duffield Hall is a an academic and laboratory building heated by Cornell’s campus steam system. During winter, heat is lost to the environment through the building envelope and air infiltration. The building is modeled as a steady-state control volume system.
+
 
 
 ## Control Volume and Interactions
@@ -33,9 +34,21 @@ The control volume includes the entire building.
 
 No shaft work is produced by the building, so work interactions are neglected.
 
----
 
-## Governing Equations
+## Equations
+
+### Diagrams
+
+<p align="center">
+  <img src="https://miro.medium.com/v2/resize%3Afit%3A1364/1%2AxyHQojQnRo6xCyu6cunSNA.jpeg"
+       alt="Pressure–Volume (P–V) Diagram"
+       width="500">
+</p>
+
+<img width="500" alt="Screenshot 2025-12-20 at 3 49 24 PM" src="https://github.com/user-attachments/assets/63c8085a-09bf-449b-ba84-4fb26c875961" />
+
+<img width="500" alt="Screenshot 2025-12-20 at 3 50 05 PM" src="https://github.com/user-attachments/assets/7ca522a8-e0d7-4db0-8b9d-ce5e172a5c75" />
+
 
 ### Mass Balance
 
@@ -45,7 +58,6 @@ $$
 \dot{m}_{in} \approx \dot{m}_{out}
 $$
 
----
 
 ### Energy Balance (First Law)
 
@@ -63,7 +75,7 @@ $$
 
 where $C$ is a constant that depends on the building’s construction and heat-loss characteristics.
 
----
+
 
 ### Entropy Consideration
 
@@ -73,7 +85,7 @@ $$
 \dot{S}_{gen} > 0
 $$
 
----
+
 
 ## Assumptions
 
@@ -82,7 +94,7 @@ $$
 - Operation is steady state
 - Heating power required at baseline conditions is approximately 150 kW
 
----
+
 
 ## Determination of the Building Constant
 
@@ -104,7 +116,7 @@ $$
 C = 5 \ \text{kW/K}
 $$
 
----
+
 
 ## Heating Load Calculation
 
@@ -126,7 +138,7 @@ $$
 E_{day} = 150 \times 24 = 3{,}600 \ \text{kWh/day}
 $$
 
----
+
 
 ## Effect of Outdoor Temperature
 
@@ -144,7 +156,7 @@ $$
 
 This represents a **33% increase** in required heating power compared to the baseline case.
 
----
+
 
 ## Conclusion
 
