@@ -6,7 +6,7 @@ technologies: []
 image: 
 ---
 
-# Thermodynamic Analysis of Heating Demand for Duffield Hall (Cornell University)
+## Thermodynamic Analysis of Heating Demand for Duffield Hall
 
 This report analyzes a real system that we interact with daily: **Duffield Hall**, an academic and laboratory building on Cornell University’s campus in Ithaca, NY. The goal is to apply thermodynamic principles from class—specifically control volumes, mass balance, energy balance, and entropy considerations—to estimate the heating energy required to maintain a constant indoor temperature under winter conditions, and to examine how changes in operating conditions affect performance.
 
