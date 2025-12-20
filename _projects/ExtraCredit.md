@@ -14,7 +14,7 @@ This report applies thermodynamic principles to a real system: **Duffield Hall**
 
 ## System Description
 
-![Duffield Hall]([https://upload.wikimedia.org/wikipedia/commons/6/6c/Duffield_Hall_Cornell.jpg](https://www.vermontstructuralslate.com/wp-content/uploads/2018/04/DSC_0018-1-1354x900.jpg))
+![Duffield Hall](https://www.vermontstructuralslate.com/wp-content/uploads/2018/04/DSC_0018-1-1354x900.jpg)
 
 Duffield Hall is a multi-story academic and laboratory building heated by Cornell’s campus steam system. During winter, heat is lost to the environment through the building envelope and air infiltration. The building is modeled as a steady-state control volume.
 
