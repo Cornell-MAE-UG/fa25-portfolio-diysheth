@@ -40,7 +40,13 @@ No shaft work is produced by the building, so work interactions are neglected.
 <p align="center">
   <img src="https://miro.medium.com/v2/resize%3Afit%3A1364/1%2AxyHQojQnRo6xCyu6cunSNA.jpeg"
        alt="Pressure–Volume (P–V) Diagram"
-       width="500">
+       style="
+         width: 500px;
+         height: 300px;
+         object-fit: cover;
+         object-position: left;
+       ">
+</p>
 
 <img width="500" alt="Screenshot 2025-12-20 at 3 49 24 PM" src="https://github.com/user-attachments/assets/63c8085a-09bf-449b-ba84-4fb26c875961" />
 
