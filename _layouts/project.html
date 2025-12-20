@@ -2,24 +2,6 @@
 layout: default
 ---
 
-<head>
-        <!-- MathJax v3 -->
-    <script>
-      window.MathJax = {
-        tex: {
-          inlineMath: [['\\(', '\\)'], ['$', '$']],
-          displayMath: [['\\[', '\\]'], ['$$', '$$']],
-          processEscapes: true
-        },
-        options: {
-          skipHtmlTags: ['script','noscript','style','textarea','pre','code']
-        }
-      };
-    </script>
-    <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-
-</head>
-
 <h1>{{ page.title }}</h1>
 
 <p><img src="{{ page.image | relative_url }}" alt="{{ page.imagealt }}" class="project-image" /></p>
