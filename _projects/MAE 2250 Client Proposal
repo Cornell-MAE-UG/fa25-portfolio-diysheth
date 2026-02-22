@@ -1,21 +1,30 @@
 ---
 layout: project
 title: MAE 2250 Client Proposal
-description: Client pitch proposal for a spotted lanternfly vineyard defense concept.
-technologies: []
+description: Spotted Lantern Flytrap client pitch (Team Batties)
+image: assets/images/IMG_0023.jpg
 ---
 
-## Team & Clients
-**Team:** Batties  
-**Clients:** Cornell CALS Extension, E&J Gallo Winery, and National Grape
+# Spotted Lantern Flytrap — Client Proposal (MAE 2250)
+team: Batties  
+clients: Cornell CALS Extension, E&J Gallo Winery, and National Grape
 
-## Problem statement
-Up to 400 spotted lanternflies (SLF) can feed on each vine in a vineyard (Cornell CALS, n.d.). Over time, repetitive feeding can cause up to **90% yield loss** (Pfeiffer et al., 2022).
+**Spotted Lanternflies (SLF)** can heavily infest vineyards—up to **400 SLF per vine**—and repeated feeding can contribute to as much as **90% yield loss** over time (Cornell CALS, n.d.; Pfeiffer et al., 2022). In this proposal, we focus on a trap-based solution to reduce SLF pressure in vineyard environments.
+
+---
+
+## Problem Statement
+Up to 400 SLF can feed on each vine in a vineyard (Cornell CALS, n.d.). Over time, repetitive feeding can cause up to 90% yield loss (Pfeiffer et al., 2022).
+
+---
 
 ## Impact
 As long as SLF continue to feed on grape vines, grapes are less likely to survive to harvest. Narrowing our focus to **defending vineyards** allows us to create an industry-specific solution.
 
-## Proposed direction
+---
+
+## Proposed Direction
+
 ### Concept: Spotted Lantern Flytrap
 
 **What it is (attract with bait + capture):**  
@@ -29,27 +38,33 @@ We are exploring:
 - Check and clear out traps periodically
 
 **Why it’s better than the status quo:**
-- There are too many SLF to kill by hand
+- There are too many SLF to try and kill by hand
 - Less chance of contamination later on
 
 **End-of-semester proof-of-concept:**  
-A single **one-way entrance chamber** with bait inside to test whether SLF can be reliably attracted and captured using **passive bait + mechanical containment**.
+Build and test **one** trap module: a **single one-way entrance chamber** with bait inside to evaluate whether SLF can be reliably attracted and captured using **passive bait + mechanical containment**.
 
-## Key risks / unknowns
-- **Capturing pollinators:** Many are already endangered. We will test our bait outside to see what else it attracts.
-- **SLF ignoring the bait:** If they prefer grapes, the trap won’t work. We will place various baits (including grape vines) in front of SLF and observe choices.
-- **SLF escaping the trap:** This negates the goal. We will add SLF and SLF-sized objects to the prototype to test escape routes.
+---
 
-## Questions for the client
-1. Are there substances more attractive to SLF than grape vines, and are they attracted to scent, sight, or something else?  
-   **Decision affected:** Selecting the best attraction mechanism for the flytrap.
+## Key Risks / Unknowns
+- **Capturing pollinators:** Many are already endangered. We will test our bait outside to see what else is attracted.
+- **SLF ignoring the bait:** If they prefer grapes, traps won’t work. We will place various baits (including grape vines) in front of SLF and observe which they choose.
+- **SLF escaping the trap:** This negates our goal. We will test with SLF and SLF-sized objects to identify escape routes and seal failure modes.
 
-2. Which other insects are attracted to the same items as SLF?  
-   **Decision affected:** Choosing bait while avoiding non-target species.
+---
 
-3. What is the size/weight of SLF when they enter vineyards?  
-   **Decision affected:** Ensuring nets/entry geometry are correctly sized.
+## Questions for the Client
+1. **Are there substances more attractive to SLF than grape vines, and are they attracted to scent, sight, or something else?**  
+   *Decision affected:* choosing the best attraction mechanism for the flytrap.
+
+2. **Which other insects are attracted to the same items as SLF?**  
+   *Decision affected:* bait selection while minimizing non-target capture.
+
+3. **What is the size/weight of SLF when they enter vineyards?**  
+   *Decision affected:* entrance geometry + net/mesh sizing.
+
+---
 
 ## References
-- Pfeiffer, D. G. et al. (2022). *Spotted lanternfly in virginia vineyards: Lycorma Delicatula (white) (Hemiptera: Fulgoridae).* doi:10.21061/ento-323np.
+- Pfeiffer, D. G., et al. (2022). *Spotted lanternfly in virginia vineyards: Lycorma Delicatula (white) (Hemiptera: Fulgoridae).* doi:10.21061/ento-323np.
 - Cornell CALS. (n.d.). *Spotted lanternfly damage.* https://cals.cornell.edu/integrated-pest-management/outreach-education/whats-bugging-you/spotted-lanternfly/spotted-lanternfly-damage
