@@ -52,6 +52,7 @@ This project proposes and tests a mechanical spotted lanternfly (SLF) trap for v
   <ul>
     <li><a class="jump-link" href="#client-pitch">Client Pitch</a></li>
     <li><a class="jump-link" href="#functional-prototype">Functional Prototype</a></li>
+    <li><a class="jump-link" href="#client-report">Client Report</a></li>
   </ul>
 </div>
 
@@ -109,6 +110,26 @@ This project proposes and tests a mechanical spotted lanternfly (SLF) trap for v
 
   <iframe
     src="{{ '/assets/ODP5.pdf' | relative_url }}"
+    class="pdf-frame"
+    loading="lazy">
+  </iframe>
+</div>
+
+<div id="client-report" class="section-card">
+  <h2>Client Report</h2>
+
+  <p>
+    This section contains the client report deliverable for the spotted lanternfly trap project.
+  </p>
+
+  <p>
+    <a href="{{ '/assets/ClientReport.pdf' | relative_url }}" target="_blank" rel="noopener">
+      Open Client Report PDF
+    </a>
+  </p>
+
+  <iframe
+    src="{{ '/assets/ClientReport.pdf' | relative_url }}"
     class="pdf-frame"
     loading="lazy">
   </iframe>
